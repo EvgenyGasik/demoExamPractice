@@ -5,8 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:demoExam"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="ВсеВывески" Height="620" Width="1200"
+        Icon="/Images/Чудо Обувь.ico"
+        ResizeMode="NoResize"
         
+        >
+       
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="15*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="0"
+                    Background="{StaticResource AccentBackground}">
+            <Image Source="/Images/Чудо Обувь.png" 
+                   Height="70"
+                   HorizontalAlignment="Left"
+                   Margin="10"/>
+            <TextBlock  Text="Все Вывески"
+                        FontSize="22"
+                        FontWeight="Bold"
+                        Margin="15 0 0 0"
+                        VerticalAlignment="Center"/>
+            
+            
+        </StackPanel>
+        <TextBlock  Text="Пользователь"
+                    FontSize="22"
+                    FontWeight="Bold"
+                    Margin="30"
+                    HorizontalAlignment="Right"
+                    x:Name="fullName"/>
+
+        <Frame x:Name="MainFrame" 
+               NavigationUIVisibility="Hidden"
+               Grid.Row="1"/>
+
+
     </Grid>
 </Window>
