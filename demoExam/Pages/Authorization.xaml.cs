@@ -31,9 +31,13 @@ namespace demoExam.Pages
             try
             { 
                 string login = loginField.Text.Trim();
+
+
                 if (login.Length == 0) return;
+
                 Users u = AppConnect.Reklama_Bd.Users.FirstOrDefault(x => x.login == login);
                 if (u == null)
+
                 {
                     MessageBox.Show($"Пользователь не найден");
                     return;
@@ -55,8 +59,8 @@ namespace demoExam.Pages
                 }
             }
             catch(Exception ex)
-            { 
-                MessageBox.Show($"Критическая ошибка {ex}");
+            {
+                MessageBox.Show($"Message: {ex.Message}\n\nInner: {ex.InnerException?.Message}\n\nStack: {ex.StackTrace}");
             }
 
         }
