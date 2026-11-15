@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="22d30173832545cbb56d29ffe2bdd1a9" Name="Diagram1">
+        <EntityTypeShape EntityType="reklama_bdModel.Categories" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="reklama_bdModel.Manufacturers" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="reklama_bdModel.Order_Items" Width="1.5" PointX="7.5" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="reklama_bdModel.Orders" Width="1.5" PointX="5.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="reklama_bdModel.Products" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="reklama_bdModel.Roles" Width="1.5" PointX="0.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="reklama_bdModel.Sizes" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="reklama_bdModel.StockItems" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="reklama_bdModel.Subcategories" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="reklama_bdModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="reklama_bdModel.Users" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <AssociationConnector Association="reklama_bdModel.FK_Products_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="reklama_bdModel.FK_Products_Manufacturers" ManuallyRouted="false" />
+        <AssociationConnector Association="reklama_bdModel.FK_Order_Items_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="reklama_bdModel.FK_Order_Items_StockItems" ManuallyRouted="false" />
+        <AssociationConnector Association="reklama_bdModel.FK_Orders_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="reklama_bdModel.FK_Products_Subcategories" ManuallyRouted="false" />
+        <AssociationConnector Association="reklama_bdModel.FK_StockItems_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="reklama_bdModel.FK_Users_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="reklama_bdModel.FK_StockItems_Sizes" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
