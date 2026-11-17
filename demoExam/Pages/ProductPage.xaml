@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-      Title="">
+      Title="Каталог товаров">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -45,7 +45,7 @@
                     <Border Margin="5"
                             BorderThickness="1"
                             CornerRadius="4"
-                            BorderBrush="#70B2AF"
+                            BorderBrush="{StaticResource AccentColor}"
                             Background="{Binding RowColor}"
                             Padding="10">
                         <Grid>
