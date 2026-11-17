@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-      Title="ProductPage">
+      Title="">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -56,9 +56,10 @@
 
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0"
-                                   Source="{Binding ImagePath}"
-                                   Width="100"
-                                   Height="100"/>
+       Source="{Binding ImagePath}"
+       Width="100"
+       Height="100"
+       Stretch="Uniform"/>
                             <StackPanel Grid.Column="1"
                                         Margin="10,0">
                                 <TextBlock FontWeight="Bold">
@@ -69,16 +70,16 @@
 
                                 </TextBlock>
                                 <TextBlock >
-                                         <Run Text="Категория"/>
+                                         <Run Text="Категория: "/>
                                          <Run Text="{Binding Categories.name}"/>
 
                                 </TextBlock>
                                 <TextBlock >
-                                         <Run Text="Количество"/>
+                                         <Run Text="Количество: "/>
                                          <Run Text="{Binding QuantityText, Mode=OneWay}"/>
                                 </TextBlock>
                                 <TextBlock >
-                                         <Run Text="Состав"/>
+                                         <Run Text="Состав: "/>
                                          <Run Text="{Binding composition}"/>
                                 </TextBlock>
                             </StackPanel>
@@ -103,20 +104,23 @@
                     Orientation="Horizontal"
                     HorizontalAlignment="Center">
             <Button Content="Удалить товар"
-                    Click="DeleteClick"
-                    Background="Red"/>
+        Click="DeleteClick"
+        Background="{StaticResource WarningBackground}"/>
             
             <Button />
             <Button/>
             <Button Click="ExitButton"
-        Background="LightYellow">
+        Background="{StaticResource AccentColor}"
+        Foreground="White">
                 <StackPanel Orientation="Horizontal">
                     <materialDesign:PackIcon Kind="Logout"
                                  Width="20"
                                  Height="20"
-                                 Margin="0,0,5,0"/>
+                                 Margin="0,0,5,0"
+                                 Foreground="White"/>
                     <TextBlock Text="Выход"
-                   VerticalAlignment="Center"/>
+                   VerticalAlignment="Center"
+                   Foreground="White"/>
                 </StackPanel>
             </Button>
         </StackPanel>

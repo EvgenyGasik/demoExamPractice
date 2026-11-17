@@ -47,8 +47,8 @@ namespace demoExam.Pages
         {
             cmbSort.Items.Clear();
             cmbSort.Items.Add("Без сортировки");
-            cmbSort.Items.Add("Цена вверх");
-            cmbSort.Items.Add("Без низ");
+            cmbSort.Items.Add("Цена ↑");
+            cmbSort.Items.Add("Цена ↓");
 
             cmbSort.SelectedIndex = 0;
 

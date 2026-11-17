@@ -46,8 +46,8 @@
 
         <Style TargetType="Button">
             <Setter Property="FontFamily" Value="Calibri" />
-            <Setter Property="Background" Value="{StaticResource AccentBackground}" />
-            <Setter Property="Foreground" Value="{StaticResource MainBackground}" />
+            <Setter Property="Background" Value="{StaticResource AccentColor}" />
+            <Setter Property="Foreground" Value="White" />
             <Setter Property="Margin" Value="4" />
             <Setter Property="Padding" Value="8,4" />
             <Setter Property="BorderThickness" Value="0" />

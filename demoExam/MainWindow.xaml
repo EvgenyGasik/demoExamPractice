@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:demoExam"
         mc:Ignorable="d"
-        Title="ВсеВывески" Height="620" Width="1200"
+        Title="Все Вывески" Height="620" Width="1200"
         Icon="/Images/Чудо Обувь.ico"
         ResizeMode="NoResize"
         
