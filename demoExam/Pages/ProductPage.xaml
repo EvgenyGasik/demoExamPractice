@@ -12,6 +12,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
@@ -37,8 +38,14 @@
                      ToolTip="Поиск  по наименованию и описанию"/>
 
         </StackPanel>
+        <TextBlock Grid.Row="1"
+           Text="Каталог товаров"
+           FontSize="22"
+           FontWeight="Bold"
+           Margin="15,10"
+           HorizontalAlignment="Center"/>
         <ListView x:Name="listProduct"
-                  Grid.Row="1"
+                  Grid.Row="2"
                   MouseDoubleClick="ListProductMouseDoubleClick">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -100,10 +107,11 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <StackPanel Grid.Row="2"
+        <StackPanel Grid.Row="3"
                     Orientation="Horizontal"
                     HorizontalAlignment="Center">
-            <Button Content="Удалить товар"
+            <Button x:Name="btnDelete"
+        Content="Удалить товар"
         Click="DeleteClick"
         Background="{StaticResource WarningBackground}"/>
             

@@ -33,6 +33,11 @@ namespace demoExam.Pages
             if (currentUser != null)
                     { 
             filterPanel.Visibility = Visibility.Visible;
+                btnDelete.IsEnabled = true;
+            }
+            else
+            {
+                btnDelete.IsEnabled = false;
             }
 
             mainWindow.fullName.Text = currentUser?.FullName ?? "Гость";
@@ -116,7 +121,8 @@ namespace demoExam.Pages
 
         private void ExitButton(object sender, RoutedEventArgs e)
         {
-
+            AppConnect.CurrentUser = null;
+            AppFrame.mainFrame.Navigate(new Authorization());
         }
     }
 }

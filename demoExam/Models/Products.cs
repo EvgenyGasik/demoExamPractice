@@ -98,7 +98,7 @@ namespace demoExam.Models
         { 
             get
             {
-                if (TotalQuantity < 3)
+                if (TotalQuantity <= 3)
                 {
                     return @"#FF8080";
                 }
