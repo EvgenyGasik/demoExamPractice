@@ -6,6 +6,7 @@
       xmlns:local="clr-namespace:demoExam.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       Title="ProductPage">
 
     <Grid>
@@ -107,9 +108,17 @@
             
             <Button />
             <Button/>
-            <Button Content="Выход"
-                    Click="ExitButton"
-                    Background="LightYellow"/>
+            <Button Click="ExitButton"
+        Background="LightYellow">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="Logout"
+                                 Width="20"
+                                 Height="20"
+                                 Margin="0,0,5,0"/>
+                    <TextBlock Text="Выход"
+                   VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
         </StackPanel>
         
     </Grid>
